@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sign in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-content {
+            width: 490px;
+            height: 650px;
+        }
+        .main-content form{
+            padding: 0 30px;
+        }
+        .main-content form .row{
+            margin: 25px auto;
+        }
+        .main-content form .row .inp-field{
+            width: 50%;
+            height: 100%;
+            width: 48%;
+        }
+        .main-content form .row .inp-field input{
+            width: 100%;
+        }
+        .main-content form .row .inp-field:first-child{
+            float: left;
+        }
+        .main-content form .row .inp-field:last-child{
+            float: right;
+        }
+
+        .main-content form .row .gender-options{
+            width: 50%;
+            width: 48%;
+            /* background-color: red; */
+        }
+
+        .row .submit-field{
+            width: 50%;
+            height: 100%;
+            float: right;
+            /* background-color: red; */
+        }
+
+        .row .submit-field input{
+            top: calc(100% - 100px);
+        }
+
+        .row:last-child{
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>sign in form</h1>
+        <form action="sign-up.html">
+            <div class=" row">
+                <div class="inp-field">
+                    <input type="text" name="" required>
+                    <label>
+                         First Name
+                    </label>
+                </div>
+                <div class="inp-field">
+                    <input type="text" name="" required>
+                    <label>
+                        Last Name
+                    </label>
+                </div>
+            </div>
+            <div class=" row inp-field">
+                <input type="text" name="" required>
+                <label>
+                    Email Adress
+                </label>
+            </div>
+            <div class="row inp-field">
+                <input type="password" id="Pass" required>
+                <label>
+                    Password
+                </label>
+                <i id="btn" class="fas fa-eye" onclick ='showHidePassword("Pass", "btn")'></i>
+            </div>
+            <div class="row inp-field">
+                <input type="password" id="Pass2" required>
+                <label>
+                    Confirm Password
+                </label>
+                <i id="btn2" class="fas fa-eye" onclick ='showHidePassword("Pass2", "btn2")'></i>
+            </div>
+            <div class="row">
+                <div class="gender-options">
+                    <input type="radio" name="gender"required>
+                    <label> Male</label><br>
+                    <input type="radio" name="gender"required>
+                    <label> Female</label><br>
+                    <input type="radio" name="gender"required>
+                    <label> Not precised</label>
+                </div>
+                <div class="submit-field">
+                    <input type="submit" value="sign in">
+                </div>
+            </div>
+            <div class="row">already a member ? <a href="log-in.html">Log in</a></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
